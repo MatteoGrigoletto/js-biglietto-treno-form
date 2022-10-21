@@ -9,13 +9,28 @@ generate.addEventListener("click", function() {
 
    // calculate ticket price
   
-   let price = distance * 0.21;
+   let price;
+   let offer;
    if (age == "minorenne") {
-      price = (price * 0.8).toFixed(2);  
-   } else if (age == "over 65") {
-      price *= 0.6;
+      price = ((distance * 0.21) * 0.8).toFixed(2);  
+      offer = `biglietto young`;
+   } else if (age == "over_65") {
+      price = ((distance * 0.21) * 0.6).toFixed(2);  
+      offer = `biglietto senior`;
+   }else{
+    price = distance * 0.21;
+    offer = `biglietto standard`;
    }
    console.log(price)
 
- 
+   // random CP Code and carriage
+   document.getElementById("show-carrozza").innerHTML = Math.floor(Math.random() * 9) + 1;
+   document.getElementById("show-codice-CP").innerHTML = Math.floor(Math.random() * 10000) + 90001;
+
+
+   // assign values
+   document.getElementById("show-name").innerHTML = name;
+   document.getElementById("show-offer").innerHTML = offer;
+   document.getElementById("price").innerHTML = price + " €";
+
 });
