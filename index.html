@@ -9,29 +9,33 @@
         <title>Form treno</title>
     </head>
     <body>
-        <div>
-            <div>
-                <input id="name" type="text">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Nome Cognome</h3>
+                    <input id="name" type="text">
+                </div>
+                <div class="col">
+                    <h3>Km da percorrere</h3>
+                    <input id="distance" type="number"  min="1">
+                </div>
+                <div class="col">
+                    <h3>Fascia d'eta'</h3>
+                    <select id="age" name="cars">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over_65">Over 65</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <input id="distance" type="number"  min="1">
-            </div>
-            <div>
-                <select id="age" name="cars">
-                    <option value="Minorenne">Minorenne</option>
-                    <option value="Maggiorenne">Maggiorenne</option>
-                    <option value="Over 65">Over 65</option>
-                </select>
-            </div>
-            <div>
-                <button id="generate" type="button" name="button">Genera</button>
-                <button id="reset" type="button" name="button">Annulla</button>
+            <div class="row">
+                <div class="col">
+                    <button id="generate" type="button" name="button">Genera</button>
+                    <button id="reset" type="button" name="button">Annulla</button>
+                </div>
             </div>
         </div>
         
-
-
-
         <script src="js/main.js"></script>
     </body>
 </html>

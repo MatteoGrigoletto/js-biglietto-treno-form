@@ -4,4 +4,14 @@
     padding: 0;
  }
  
- 
+ .container{
+    max-width: 30rem;
+    margin: auto;
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+.col{
+    width: 33%;
+}
