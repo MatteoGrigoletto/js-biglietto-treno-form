@@ -26,7 +26,7 @@
     display: none;
 }
 .ticket-on{
-    display: block;
+    display: flex;
 }
  #show-name {
     margin: 10px 0;
