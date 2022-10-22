@@ -35,7 +35,7 @@ document.getElementById("price").innerHTML = price + " €";
 
 
 // display ticket
-const ticket = document.getElementById("ticket");
+const ticket = document.querySelector(".back-ticket");
 ticket.classList.add("ticket-on");
 
 });

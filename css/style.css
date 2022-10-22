@@ -11,33 +11,69 @@
     max-width: 40rem;
     margin: auto;
     text-align: center;
-    
  }
  .row{
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
-
+    padding: 10px;
     
  }
-.white{
+.ticket-generator, .back-ticket{
     background-color: white;
     border-radius: 10px;
 }
+.ticket-generator, .ticket{
+    padding: 20px;
+}
+.col-30{
+    width: 30%;
+}
 .col-33{
     width: 33%;  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    border: 1px solid white;
+}
+input{
+    text-align: center;
 }
 .col-67{
     width: 67%;
+    border: 1px solid white;
 }
 
+.bg-ticket{
+    background-color: rgb(111, 57, 237, 0.5)
+}
 /* TYPO */
 h1 {
     font-size: 1.3rem;
+    color: white;
+    margin-bottom: 10px;
 }
+h2{
+    color:white;
+    margin: 10px 0px;
+}
+/* button */
+button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(111, 57, 237);
+    color: white;
+    border: 1px solid white;
+}
+
 /* ticket */
-.ticket {
+.back-ticket {
     display: none;
+}
+.ticket{
+    background-color: rgba(94, 69, 220, 0.3);
 }
 .ticket-on{
     display: flex;
@@ -61,6 +97,6 @@ h1 {
    padding-top: 12px;
    padding-bottom: 12px;
    text-align: left;
-   background-color: black;
+   background-color: rgb(0, 0, 0);
    color: white;
  }
