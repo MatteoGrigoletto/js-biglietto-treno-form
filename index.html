@@ -11,54 +11,60 @@
     <body>
         <div class="container">
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <div class="row">
-                <div class="col-30">
-                    <h3>Nome Cognome</h3>
-                    <input id="name" type="text">
+            <div class="white">
+                <div class="row">
+                    <div class="col-30">
+                        <h3>Nome Cognome</h3>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="col-30">
+                        <h3>Km da percorrere</h3>
+                        <input id="distance" type="number"  min="1">
+                    </div>
+                    <div class="col-30">
+                        <h3>Fascia d'eta'</h3>
+                        <select id="age" name="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over_65">Over 65</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-30">
-                    <h3>Km da percorrere</h3>
-                    <input id="distance" type="number"  min="1">
-                </div>
-                <div class="col-30">
-                    <h3>Fascia d'eta'</h3>
-                    <select id="age" name="cars">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="over_65">Over 65</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-30">
-                    <button id="generate" type="button" name="button">Genera</button>
-                    <button id="reset" type="button" name="button">Annulla</button>
+                <div class="row">
+                    <div class="col-30">
+                        <button id="generate" type="button" name="button">Genera</button>
+                        <button id="reset" type="button" name="button">Annulla</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <h2>IL TUO BIGLIETTO</h2>
-            <h3>DETTAGLIO PASSEGGERI</h3>
-            <div id="ticket" class="ticket row">  
-                <div class="col-33">
-                    <h4>NOME PASSEGGERO</h4>
-                    <p id="show-name"></p>
-                </div>
-                <div class="col-67">
-                    <table id="ticket-info">
-                        <tr>
-                            <th>Offerta</th>
-                            <th>Carrozza</th>
-                            <th>Codice CP</th>
-                            <th>Costo Biglietto</th>
-                        </tr>
-                        <tr>
-                            <td id="show-offer"></td>
-                            <td id="show-carrozza"></td>
-                            <td id="show-codice-CP"></td>
-                            <td id="price"></td>
-                        </tr>
-                    </table>
+            <div class="white">
+                <div id="ticket" class="ticket">  
+                   
+                    <div class="row">
+                        <div class="col-33">
+                            <h4>NOME PASSEGGERO</h4>
+                            <p id="show-name"></p>
+                        </div>
+                        <div class="col-67">
+                            <table id="ticket-info">
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Biglietto</th>
+                                </tr>
+                                <tr>
+                                    <td id="show-offer"></td>
+                                    <td id="show-carrozza"></td>
+                                    <td id="show-codice-CP"></td>
+                                    <td id="price"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
