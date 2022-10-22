@@ -46,6 +46,6 @@ reset.addEventListener("click", function() {
 
 
 // hide ticket
-const ticket = document.getElementById("ticket");
+const ticket = document.querySelector(".back-ticket");
 ticket.style.visibility = "hidden";
 }); 
